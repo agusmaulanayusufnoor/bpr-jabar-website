@@ -16,7 +16,7 @@ export default function Home() {
     {
       title: "Solusi Keuangan Terpercaya untuk Masyarakat Jawa Barat",
       description: "PT BPR Jabar Perseroda hadir dengan layanan perbankan profesional dan terpercaya untuk mendukung perekonomian daerah.",
-      image: "/images/hero/bank-1.jpg",
+      image: "/images/hero/bank-1.webp",
       fallback: "from-green-700 to-green-900",
       cta: "Ajukan Kredit Sekarang",
       ctaLink: "/pengajuan"
@@ -24,7 +24,7 @@ export default function Home() {
     {
       title: "Dukung UMKM dengan Modal Kerja Mudah",
       description: "Kami menyediakan berbagai produk pembiayaan untuk membantu pengembangan Usaha Mikro, Kecil, dan Menengah.",
-      image: "/images/hero/umkm-1.jpg",
+      image: "/images/hero/umkm-1.webp",
       fallback: "from-blue-700 to-green-800",
       cta: "Pelajari Lebih Lanjut",
       ctaLink: "/layanan"
@@ -32,7 +32,7 @@ export default function Home() {
     {
       title: "Tabungan dan Deposito dengan Bunga Kompetitif",
       description: "Nikmati bunga menarik untuk tabungan dan deposito Anda dengan keamanan terjamin LPS.",
-      image: "/images/hero/saving-1.jpg",
+      image: "/images/hero/saving-1.webp",
       fallback: "from-emerald-700 to-teal-800",
       cta: "Hitung Simulasi",
       ctaLink: "/simulasi"
