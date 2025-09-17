@@ -10,12 +10,14 @@ import { ChevronLeft, ChevronRight, Star, Users, Building2, TrendingUp, Award, A
 
 export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(0)
+  const [useImageFallback, setUseImageFallback] = useState(false)
 
   const slides = [
     {
       title: "Solusi Keuangan Terpercaya untuk Masyarakat Jawa Barat",
       description: "PT BPR Jabar Perseroda hadir dengan layanan perbankan profesional dan terpercaya untuk mendukung perekonomian daerah.",
       image: "/images/hero/bank-1.jpg",
+      fallback: "from-green-700 to-green-900",
       cta: "Ajukan Kredit Sekarang",
       ctaLink: "/pengajuan"
     },
@@ -23,6 +25,7 @@ export default function Home() {
       title: "Dukung UMKM dengan Modal Kerja Mudah",
       description: "Kami menyediakan berbagai produk pembiayaan untuk membantu pengembangan Usaha Mikro, Kecil, dan Menengah.",
       image: "/images/hero/umkm-1.jpg",
+      fallback: "from-blue-700 to-green-800",
       cta: "Pelajari Lebih Lanjut",
       ctaLink: "/layanan"
     },
@@ -30,6 +33,7 @@ export default function Home() {
       title: "Tabungan dan Deposito dengan Bunga Kompetitif",
       description: "Nikmati bunga menarik untuk tabungan dan deposito Anda dengan keamanan terjamin LPS.",
       image: "/images/hero/saving-1.jpg",
+      fallback: "from-emerald-700 to-teal-800",
       cta: "Hitung Simulasi",
       ctaLink: "/simulasi"
     }
@@ -97,6 +101,10 @@ export default function Home() {
     setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length)
   }
 
+  const handleImageError = () => {
+    setUseImageFallback(true)
+  }
+
   return (
     <div className="min-h-screen">
       {/* Hero Section with Image Slider */}
@@ -111,13 +119,20 @@ export default function Home() {
             >
               <div className="absolute inset-0 bg-black/40" />
               <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent" />
-              <Image
-                src={slide.image}
-                alt={slide.title}
-                fill
-                className="object-cover"
-                priority
-              />
+              
+              {/* Try to load image, fallback to gradient if not available */}
+              {useImageFallback ? (
+                <div className={`absolute inset-0 bg-gradient-to-br ${slide.fallback}`} />
+              ) : (
+                <Image
+                  src={slide.image}
+                  alt={slide.title}
+                  fill
+                  className="object-cover"
+                  priority
+                  onError={handleImageError}
+                />
+              )}
             </div>
           ))}
         </div>
@@ -142,6 +157,15 @@ export default function Home() {
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Link>
               </Button>
+              
+              {/* Image status indicator */}
+              {useImageFallback && (
+                <div className="mt-4 p-3 bg-yellow-500/20 border border-yellow-500/30 rounded-lg">
+                  <p className="text-sm text-yellow-200">
+                    ⚠️ Images sedang dalam proses upload. Menggunakan placeholder sementara.
+                  </p>
+                </div>
+              )}
             </div>
           </div>
         </div>
