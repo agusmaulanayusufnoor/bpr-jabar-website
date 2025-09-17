@@ -1,0 +1,97 @@
+{
+  "kantor_pusat": {
+    "nama": "Kantor Pusat",
+    "alamat": "Jl. Soekarno Hatta No. 578, Bandung",
+    "telepon": "(022) 7564123",
+    "fax": "(022) 7564124",
+    "email": "info@bprjabar.co.id",
+    "jam_operasional": "Senin - Jumat: 08:00 - 16:00 WIB",
+    "latitude": -6.9175,
+    "longitude": 107.6191,
+    "tipe": "pusat"
+  },
+  "cabang": [
+    {
+      "nama": "Cabang Cimahi",
+      "alamat": "Jl. Gatot Subroto No. 89, Cimahi",
+      "telepon": "(022) 6632211",
+      "fax": "(022) 6632212",
+      "email": "cimahi@bprjabar.co.id",
+      "jam_operasional": "Senin - Jumat: 08:00 - 16:00 WIB",
+      "latitude": -6.8844,
+      "longitude": 107.5405,
+      "tipe": "cabang"
+    },
+    {
+      "nama": "Cabang Sukabumi",
+      "alamat": "Jl. Suryakencana No. 45, Sukabumi",
+      "telepon": "(0266) 222123",
+      "fax": "(0266) 222124",
+      "email": "sukabumi@bprjabar.co.id",
+      "jam_operasional": "Senin - Jumat: 08:00 - 16:00 WIB",
+      "latitude": -6.9248,
+      "longitude": 106.9319,
+      "tipe": "cabang"
+    },
+    {
+      "nama": "Cabang Tasikmalaya",
+      "alamat": "Jl. HZ. Mustofa No. 234, Tasikmalaya",
+      "telepon": "(0265) 331234",
+      "fax": "(0265) 331235",
+      "email": "tasikmalaya@bprjabar.co.id",
+      "jam_operasional": "Senin - Jumat: 08:00 - 16:00 WIB",
+      "latitude": -7.3196,
+      "longitude": 108.2028,
+      "tipe": "cabang"
+    },
+    {
+      "nama": "Cabang Garut",
+      "alamat": "Jl. Cimanuk No. 56, Garut",
+      "telepon": "(0262) 234567",
+      "fax": "(0262) 234568",
+      "email": "garut@bprjabar.co.id",
+      "jam_operasional": "Senin - Jumat: 08:00 - 16:00 WIB",
+      "latitude": -7.2149,
+      "longitude": 107.8982,
+      "tipe": "cabang"
+    }
+  ],
+  "kas": [
+    {
+      "nama": "Kas Cibiru",
+      "alamat": "Jl. Raya Cibiru No. 123, Bandung",
+      "telepon": "(022) 7812345",
+      "jam_operasional": "Senin - Jumat: 08:00 - 16:00 WIB",
+      "latitude": -6.9344,
+      "longitude": 107.7185,
+      "tipe": "kas"
+    },
+    {
+      "nama": "Kas Ujungberung",
+      "alamat": "Jl. A.H. Nasution No. 345, Bandung",
+      "telepon": "(022) 7801234",
+      "jam_operasional": "Senin - Jumat: 08:00 - 16:00 WIB",
+      "latitude": -6.9128,
+      "longitude": 107.6946,
+      "tipe": "kas"
+    },
+    {
+      "nama": "Kas Cipedes",
+      "alamat": "Jl. Cipedes Raya No. 67, Tasikmalaya",
+      "telepon": "(0265) 332345",
+      "jam_operasional": "Senin - Jumat: 08:00 - 16:00 WIB",
+      "latitude": -7.3386,
+      "longitude": 108.2194,
+      "tipe": "kas"
+    },
+    {
+      "nama": "Kas Tarogong",
+      "alamat": "Jl. Cipanas No. 89, Garut",
+      "telepon": "(0262) 235678",
+      "jam_operasional": "Senin - Jumat: 08:00 - 16:00 WIB",
+      "latitude": -7.2531,
+      "longitude": 107.8872,
+      "tipe": "kas"
+    }
+  ]
+}
