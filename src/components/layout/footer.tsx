@@ -81,7 +81,7 @@ const Footer = () => {
             <h4 className="font-semibold mb-4">Perusahaan</h4>
             <ul className="space-y-2">
               {footerLinks.perusahaan.map((link) => (
-                <li key={link.href}>
+                <li key={`perusahaan-${index}`}>
                   <Link 
                     href={link.href}
                     className="text-muted-foreground hover:text-primary text-sm transition-colors"
@@ -98,7 +98,7 @@ const Footer = () => {
             <h4 className="font-semibold mb-4">Layanan</h4>
             <ul className="space-y-2">
               {footerLinks.layanan.map((link) => (
-                <li key={link.href}>
+                <li key={`perusahaan-${index}`}>
                   <Link 
                     href={link.href}
                     className="text-muted-foreground hover:text-primary text-sm transition-colors"
@@ -115,7 +115,7 @@ const Footer = () => {
             <h4 className="font-semibold mb-4">Informasi</h4>
             <ul className="space-y-2 mb-6">
               {footerLinks.informasi.map((link) => (
-                <li key={link.href}>
+                <li key={`perusahaan-${index}`}>
                   <Link 
                     href={link.href}
                     className="text-muted-foreground hover:text-primary text-sm transition-colors"
@@ -129,7 +129,7 @@ const Footer = () => {
             <h4 className="font-semibold mb-4">Legal</h4>
             <ul className="space-y-2">
               {footerLinks.legal.map((link) => (
-                <li key={link.href}>
+                <li key={`perusahaan-${index}`}>
                   <Link 
                     href={link.href}
                     className="text-muted-foreground hover:text-primary text-sm transition-colors"
