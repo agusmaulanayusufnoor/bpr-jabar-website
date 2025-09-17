@@ -71,20 +71,20 @@ const Navbar = () => {
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
-            <Link href="/" className="flex items-center space-x-1">
-              <div className="w-20 h-16 rounded-lg flex items-center justify-center">
+            <Link href="/" className="flex items-center space-x-0">
+              <div className="w-32 h-24 rounded-lg flex items-center justify-center mr-2">
                 <Image
                   src="/logo.svg"
                   alt="PT BPR Jabar Perseroda"
-                  width={120}
-                  height={40}
+                  width={160}
+                  height={50}
                   priority
                   className="h-auto w-auto"
                 />
               </div>
               <div>
-                <span className="font-bold text-lg">PT BPR Jabar Perseroda</span>
-               
+                <span className="font-bold text-lg">BPR JABAR</span>
+                <span className="block text-xs text-muted-foreground">PT BPR Jabar Perseroda</span>
               </div>
             </Link>
 
