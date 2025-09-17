@@ -1,0 +1,171 @@
+{
+  "tabungan": [
+    {
+      "nama": "Tabungan Sip",
+      "deskripsi": "Tabungan dengan persyaratan mudah dan fleksibel untuk semua kalangan",
+      "fitur": [
+        "Setoran awal minimal Rp 50.000",
+        "Saldo minimal Rp 20.000",
+        "Bunga kompetitif",
+        "Kartu ATM gratis",
+        "Internet banking",
+        "Biaya administrasi ringan"
+      ],
+      "manfaat": [
+        "Mudah dibuka dengan persyaratan sederhana",
+        "Dapat diakses di seluruh jaringan kantor BPR Jabar",
+        "Aman dan terjamin LPS",
+        "Dukungan layanan digital"
+      ],
+      "suku_bunga": "3% - 5% per tahun"
+    },
+    {
+      "nama": "Tabungan Berjangka",
+      "deskripsi": "Tabungan dengan jangka waktu tertentu untuk perencanaan keuangan masa depan",
+      "fitur": [
+        "Jangka waktu 6, 12, 18, 24, 36 bulan",
+        "Setoran rutin perbulan",
+        "Bunga lebih tinggi dari tabungan biasa",
+        "Dapat dijadikan jaminan kredit",
+        "Asuransi jiwa gratis"
+      ],
+      "manfaat": [
+        "Membantu disiplin menabung",
+        "Mempersiapkan dana pendidikan",
+        "Mempersiapkan dana pensiun",
+        "Mempersiapkan dana investasi"
+      ],
+      "suku_bunga": "4% - 6% per tahun"
+    },
+    {
+      "nama": "Tabungan Haji",
+      "deskripsi": "Tabungan khusus untuk persiapan ibadah haji dan umrah",
+      "fitur": [
+        "Setoran awal minimal Rp 100.000",
+        "Setoran rutin fleksibel",
+        "Nasihat keuangan syariah",
+        "Pelaporan perkembangan dana",
+        "Kerjasama dengan travel haji terpercaya"
+      ],
+      "manfaat": [
+        "Membantu persiapan dana haji",
+        "Mendapat bimbingan manasik haji",
+        "Fleksibel dalam menabung",
+        "Aman dan terpercaya"
+      ],
+      "suku_bunga": "Bagi hasil syariah"
+    }
+  ],
+  "deposito": [
+    {
+      "nama": "Deposito Berjangka",
+      "deskripsi": "Simpanan dengan jangka waktu tertentu dan suku bunga kompetitif",
+      "fitur": [
+        "Jangka waktu 1, 3, 6, 12, 24 bulan",
+        "Suku bunga kompetitif",
+        "Dapat diperpanjang otomatis (ARO)",
+        "Dijamin LPS",
+        "Bisa dijadikan jaminan kredit"
+      ],
+      "manfaat": [
+        "Keamanan terjamin",
+        "Bunga lebih tinggi dari tabungan",
+        "Fleksibel dalam pemilihan jangka waktu",
+        "Likuiditas tinggi"
+      ],
+      "suku_bunga": "5.5% - 7% per tahun"
+    },
+    {
+      "nama": "Deposito On-Call",
+      "deskripsi": "Deposito dengan penarikan fleksibel setelah pemberitahuan",
+      "fitur": [
+        "Minimum deposito Rp 50.000.000",
+        "Penarikan setelah 7 hari pemberitahuan",
+        "Suku bunga menarik",
+        "Dijamin LPS",
+        "Cocok untuk dana cadangan"
+      ],
+      "manfaat": [
+        "Fleksibilitas penarikan",
+        "Bunga lebih baik dari tabungan",
+        "Keamanan dana terjamin",
+        "Cocok untuk perusahaan"
+      ],
+      "suku_bunga": "4% - 5% per tahun"
+    }
+  ],
+  "kredit": [
+    {
+      "nama": "Kredit Modal Kerja",
+      "deskripsi": "Pembiayaan untuk mengembangkan usaha dan modal kerja",
+      "fitur": [
+        "Plafond hingga Rp 500.000.000",
+        "Jangka waktu maksimal 3 tahun",
+        "Agunan tanah/bangunan",
+        "Proses cepat",
+        "Bunga kompetitif"
+      ],
+      "manfaat": [
+        "Membantu pengembangan usaha",
+        "Menambah modal kerja",
+        "Meningkatkan omset",
+        "Fleksibel dalam penggunaan"
+      ],
+      "suku_bunga": "1% - 1.5% per bulan"
+    },
+    {
+      "nama": "Kredit Investasi",
+      "deskripsi": "Pembiayaan untuk pembelian aset produktif dan investasi",
+      "fitur": [
+        "Plafond hingga Rp 1.000.000.000",
+        "Jangka waktu maksimal 5 tahun",
+        "Agunan sesuai pembiayaan",
+        "Angsuran tetap",
+        "Bunga kompetitif"
+      ],
+      "manfaat": [
+        "Membeli aset produktif",
+        "Meningkatkan kapasitas produksi",
+        "Investasi jangka panjang",
+        "Meningkatkan nilai aset"
+      ],
+      "suku_bunga": "0.8% - 1.2% per bulan"
+    },
+    {
+      "nama": "Kredit Konsumtif",
+      "deskripsi": "Pembiayaan untuk kebutuhan konsumtif pribadi dan keluarga",
+      "fitur": [
+        "Plafond hingga Rp 100.000.000",
+        "Jangka waktu maksimal 3 tahun",
+        "Agunan/jaminan",
+        "Proses mudah",
+        "Persyaratan sederhana"
+      ],
+      "manfaat": [
+        "Memenuhi kebutuhan konsumtif",
+        "Renovasi rumah",
+        "Pendidikan anak",
+        "Biaya kesehatan"
+      ],
+      "suku_bunga": "1% - 1.5% per bulan"
+    },
+    {
+      "nama": "Kredit Multiguna",
+      "deskripsi": "Pembiayaan untuk berbagai kebutuhan dengan agunan sertifikat",
+      "fitur": [
+        "Plafond hingga Rp 2.000.000.000",
+        "Jangka waktu maksimal 10 tahun",
+        "Agunan sertifikat rumah/tanah",
+        "Cair cepat",
+        "Bunga kompetitif"
+      ],
+      "manfaat": [
+        "Plafond besar",
+        "Jangka waktu panjang",
+        "Bunga tetap",
+        "Cocok untuk berbagai kebutuhan"
+      ],
+      "suku_bunga": "0.75% - 1% per bulan"
+    }
+  ]
+}
