@@ -53,7 +53,18 @@ export default function SimulasiPage() {
     const bungaPerTahun = depositoData.jumlah * (bungaPersen / 100)
     const bungaPerBulan = bungaPerTahun / 12
     const bungaPerHari = bungaPerTahun / 365
-    const totalAkhir = depositoData.jumlah + (bungaPerTahun * depositoData.tenor / 12)
+    
+    // Hitung bunga bruto untuk periode deposito
+    const bungaBruto = bungaPerTahun * depositoData.tenor / 12
+    
+    // Hitung pajak (20% dari bunga bruto)
+    const pajak = bungaBruto * 0.20
+    
+    // Hitung bunga netto (bunga bruto - pajak)
+    const bungaNetto = bungaBruto - pajak
+    
+    // Hitung total akhir (jumlah deposito + bunga netto)
+    const totalAkhir = depositoData.jumlah + bungaNetto
 
     setHasilDeposito({
       jumlahAwal: depositoData.jumlah,
@@ -62,7 +73,10 @@ export default function SimulasiPage() {
       bungaPerBulan,
       bungaPerHari,
       totalAkhir,
-      totalBunga: totalAkhir - depositoData.jumlah,
+      bungaBruto,
+      pajak,
+      bungaNetto,
+      totalBunga: bungaNetto,
       tenor: depositoData.tenor
     })
   }
@@ -334,9 +348,21 @@ export default function SimulasiPage() {
                             </p>
                           </div>
                           <div>
-                            <Label className="text-sm text-muted-foreground">Total Bunga</Label>
+                            <Label className="text-sm text-muted-foreground">Bunga Bruto</Label>
+                            <p className="text-lg font-semibold text-blue-600">
+                              {formatCurrency(hasilDeposito.bungaBruto)}
+                            </p>
+                          </div>
+                          <div>
+                            <Label className="text-sm text-muted-foreground">Pajak (20%)</Label>
+                            <p className="text-lg font-semibold text-red-600">
+                              {formatCurrency(hasilDeposito.pajak)}
+                            </p>
+                          </div>
+                          <div>
+                            <Label className="text-sm text-muted-foreground">Bunga Netto</Label>
                             <p className="text-lg font-semibold text-green-600">
-                              {formatCurrency(hasilDeposito.totalBunga)}
+                              {formatCurrency(hasilDeposito.bungaNetto)}
                             </p>
                           </div>
                           <div>

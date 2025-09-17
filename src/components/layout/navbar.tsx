@@ -1,39 +1,40 @@
-'use client'
+"use client";
 
-import { useState, useEffect } from 'react'
-import Link from 'next/link'
-import { usePathname } from 'next/navigation'
-import { Button } from '@/components/ui/button'
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
-import { Menu, X, Phone, Mail, MapPin } from 'lucide-react'
+import { useState, useEffect } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { Button } from "@/components/ui/button";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Menu, X, Phone, Mail, MapPin } from "lucide-react";
+import Image from 'next/image';
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false)
-  const [isScrolled, setIsScrolled] = useState(false)
-  const pathname = usePathname()
+  const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50)
-    }
+      setIsScrolled(window.scrollY > 50);
+    };
 
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const navItems = [
-    { href: '/', label: 'Beranda' },
-    { href: '/profil', label: 'Profil' },
-    { href: '/kantor', label: 'Kantor' },
-    { href: '/layanan', label: 'Layanan' },
-    { href: '/simulasi', label: 'Simulasi' },
-    { href: '/pengajuan', label: 'Pengajuan' },
-    { href: '/laporan', label: 'Laporan' },
-    { href: '/berita', label: 'Berita' },
-    { href: '/kontak', label: 'Kontak' },
-  ]
+    { href: "/", label: "Beranda" },
+    { href: "/profil", label: "Profil" },
+    { href: "/kantor", label: "Kantor" },
+    { href: "/layanan", label: "Layanan" },
+    { href: "/simulasi", label: "Simulasi" },
+    { href: "/pengajuan", label: "Pengajuan" },
+    { href: "/laporan", label: "Laporan" },
+    { href: "/berita", label: "Berita" },
+    { href: "/kontak", label: "Kontak" },
+  ];
 
-  const isActive = (href: string) => pathname === href
+  const isActive = (href: string) => pathname === href;
 
   return (
     <>
@@ -60,19 +61,30 @@ const Navbar = () => {
       </div>
 
       {/* Main Navbar */}
-      <nav className={`sticky top-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-background/95 backdrop-blur-md shadow-lg' : 'bg-background'
-      }`}>
+      <nav
+        className={`sticky top-0 z-50 transition-all duration-300 ${
+          isScrolled
+            ? "bg-background/95 backdrop-blur-md shadow-lg"
+            : "bg-background"
+        }`}
+      >
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
-            <Link href="/" className="flex items-center space-x-2">
-              <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-lg">BJ</span>
+            <Link href="/" className="flex items-center space-x-1">
+              <div className="w-20 h-16 rounded-lg flex items-center justify-center">
+                <Image
+                  src="/logo.svg"
+                  alt="PT BPR Jabar Perseroda"
+                  width={120}
+                  height={40}
+                  priority
+                  className="h-auto w-auto"
+                />
               </div>
               <div>
-                <span className="font-bold text-lg">BPR Jabar</span>
-                <span className="block text-xs text-muted-foreground">Perseroda</span>
+                <span className="font-bold text-lg">PT BPR Jabar Perseroda</span>
+               
               </div>
             </Link>
 
@@ -84,8 +96,8 @@ const Navbar = () => {
                   href={item.href}
                   className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
                     isActive(item.href)
-                      ? 'bg-primary text-primary-foreground'
-                      : 'text-muted-foreground hover:text-foreground hover:bg-accent'
+                      ? "bg-primary text-primary-foreground"
+                      : "text-muted-foreground hover:text-foreground hover:bg-accent"
                   }`}
                 >
                   {item.label}
@@ -112,12 +124,14 @@ const Navbar = () => {
                   <div className="flex items-center justify-between mb-4">
                     <div className="flex items-center space-x-2">
                       <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                        <span className="text-primary-foreground font-bold text-sm">BJ</span>
+                        <span className="text-primary-foreground font-bold text-sm">
+                          BJ
+                        </span>
                       </div>
                       <span className="font-bold">BPR Jabar</span>
                     </div>
                   </div>
-                  
+
                   {navItems.map((item) => (
                     <Link
                       key={item.href}
@@ -125,14 +139,14 @@ const Navbar = () => {
                       onClick={() => setIsOpen(false)}
                       className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
                         isActive(item.href)
-                          ? 'bg-primary text-primary-foreground'
-                          : 'text-muted-foreground hover:text-foreground hover:bg-accent'
+                          ? "bg-primary text-primary-foreground"
+                          : "text-muted-foreground hover:text-foreground hover:bg-accent"
                       }`}
                     >
                       {item.label}
                     </Link>
                   ))}
-                  
+
                   <div className="pt-4 border-t">
                     <Button asChild className="w-full">
                       <Link href="/pengajuan" onClick={() => setIsOpen(false)}>
@@ -147,7 +161,7 @@ const Navbar = () => {
         </div>
       </nav>
     </>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

@@ -11,4 +11,8 @@ User-agent: facebookexternalhit
 Allow: /
 
 User-agent: *
+Disallow: /admin/
+Disallow: /private/
 Allow: /
+
+Sitemap: https://bprjabar.co.id/sitemap.xml
