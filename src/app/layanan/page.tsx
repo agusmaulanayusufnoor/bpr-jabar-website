@@ -17,7 +17,7 @@ import {
   Clock,
   Users
 } from 'lucide-react'
-import produkData from '@/json/produk.json'
+import produkData from '../../../json/produk.json'
 
 export default function LayananPage() {
   const [activeTab, setActiveTab] = useState('tabungan')

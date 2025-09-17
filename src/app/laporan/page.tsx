@@ -17,7 +17,7 @@ import {
   Globe,
   ExternalLink
 } from 'lucide-react'
-import laporanData from '@/json/laporan.json'
+import laporanData from '../../../json/laporan.json'
 
 export default function LaporanPage() {
   const [searchTerm, setSearchTerm] = useState('')

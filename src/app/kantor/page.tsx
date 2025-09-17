@@ -15,7 +15,7 @@ import {
   Search,
   Filter
 } from 'lucide-react'
-import kantorData from '@/json/kantor.json'
+import kantorData from '../../../json/kantor.json'
 
 export default function KantorPage() {
   const [activeTab, setActiveTab] = useState('pusat')

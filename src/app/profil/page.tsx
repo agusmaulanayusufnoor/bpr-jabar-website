@@ -7,7 +7,7 @@ import { Badge } from '@/components/ui/badge'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { Building2, Users, Award, Target, Calendar, MapPin } from 'lucide-react'
-import profilData from '@/json/profil.json'
+import profilData from '../../../json/profil.json'
 
 export default function ProfilPage() {
   const [activeTab, setActiveTab] = useState('sejarah')

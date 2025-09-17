@@ -21,7 +21,7 @@ import {
   ArrowRight,
   Clock
 } from 'lucide-react'
-import beritaData from '@/json/berita.json'
+import beritaData from '../../../json/berita.json'
 
 export default function BeritaPage() {
   const [searchTerm, setSearchTerm] = useState('')

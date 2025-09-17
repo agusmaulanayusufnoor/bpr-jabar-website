@@ -22,7 +22,7 @@ import {
   MessageCircle,
   BookmarkPlus
 } from 'lucide-react'
-import beritaData from '@/json/berita.json'
+import beritaData from '../../../../json/berita.json'
 
 export default function BeritaDetailPage() {
   const params = useParams()
