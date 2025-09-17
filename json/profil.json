@@ -1,0 +1,71 @@
+{
+  "sejarah": {
+    "judul": "Sejarah PT BPR Jabar Perseroda",
+    "konten": "PT BPR Jabar Perseroda didirikan pada tahun 2007 sebagai bagian dari upaya Pemerintah Provinsi Jawa Barat untuk meningkatkan pelayanan keuangan di tingkat pedesaan dan perkotaan. Sebagai Badan Usaha Milik Daerah (BUMD), BPR Jabar Perseroda memiliki komitmen kuat untuk mendukung perekonomian masyarakat Jawa Barat melalui layanan perbankan yang profesional dan terpercaya."
+  },
+  "visi": {
+    "judul": "Visi",
+    "konten": "Menjadi Bank Perkreditan Rakyat terdepan di Jawa Barat yang profesional, terpercaya, dan berkontribusi nyata dalam pembangunan ekonomi masyarakat."
+  },
+  "misi": {
+    "judul": "Misi",
+    "konten": [
+      "Memberikan layanan perbankan yang prima dan profesional kepada seluruh nasabah",
+      "Mendukung pengembangan Usaha Mikro, Kecil, dan Menengah (UMKM) di Jawa Barat",
+      "Mengelola sumber daya perusahaan secara efektif dan efisien",
+      "Menerapkan tata kelola perusahaan yang baik (Good Corporate Governance)",
+      "Berkontribusi dalam pembangunan ekonomi daerah Jawa Barat"
+    ]
+  },
+  "pengurus": {
+    "komisaris": [
+      {
+        "nama": "Drs. H. Aang Hamid Suganda, M.Si",
+        "jabatan": "Komisaris Utama",
+        "foto": "/images/pengurus/komisaris-utama.jpg"
+      },
+      {
+        "nama": "Drs. H. Cecep Gogor, M.Si",
+        "jabatan": "Komisaris",
+        "foto": "/images/pengurus/komisaris-1.jpg"
+      },
+      {
+        "nama": "Drs. H. Dede Sulaeman, M.Si",
+        "jabatan": "Komisaris",
+        "foto": "/images/pengurus/komisaris-2.jpg"
+      }
+    ],
+    "direksi": [
+      {
+        "nama": "Drs. H. Asep Sudrajat, MM",
+        "jabatan": "Direktur Utama",
+        "foto": "/images/pengurus/direktur-utama.jpg"
+      },
+      {
+        "nama": "Drs. H. Eman Sulaeman, MM",
+        "jabatan": "Direktur Operasional",
+        "foto": "/images/pengurus/direktur-operasional.jpg"
+      },
+      {
+        "nama": "Drs. H. Yayat Hidayat, MM",
+        "jabatan": "Direktur Kepatuhan",
+        "foto": "/images/pengurus/direktur-kepatuhan.jpg"
+      }
+    ]
+  },
+  "struktur_organisasi": {
+    "deskripsi": "Struktur organisasi PT BPR Jabar Perseroda dirancang untuk memastikan efektivitas operasional dan penerapan tata kelola perusahaan yang baik.",
+    "gambar": "/images/struktur-organisasi.png"
+  },
+  "kepemilikan_saham": {
+    "judul": "Kepemilikan Saham",
+    "deskripsi": "PT BPR Jabar Perseroda dimiliki sepenuhnya oleh Pemerintah Provinsi Jawa Barat melalui Perusahaan Daerah (Perseroda).",
+    "pemegang_saham": [
+      {
+        "nama": "Pemerintah Provinsi Jawa Barat",
+        "persentase": "100%",
+        "keterangan": "Melalui Perusahaan Daerah (Perseroda)"
+      }
+    ]
+  }
+}
